@@ -19,7 +19,7 @@ pipeline {
         }
         stage ("Package") {
             steps {
-                sh "mvn build"
+                sh "mvn package"
             }
         }
         stage ("Probar si funciona Docker") {
